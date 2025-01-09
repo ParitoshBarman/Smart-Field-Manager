@@ -1,0 +1,15 @@
+nav{
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+nav>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 60px;
+    border-radius: 50%;
+}

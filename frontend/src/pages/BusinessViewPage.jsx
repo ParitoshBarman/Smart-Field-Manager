@@ -20,7 +20,7 @@ const API_URL = import.meta.env.VITE_API_BASE_URL;
 export const BusinessViewPage = () => {
   const customIcon = new L.Icon({
     iconUrl: customeIcon,
-    iconSize: [32, 45],
+    iconSize: [22, 33],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32] 
   });

@@ -17,7 +17,7 @@ import { useAuth } from "../context/AuthContext";
 function GeoLocationMap({ locations }) {
   const customIcon = new L.Icon({
   iconUrl: customeIcon,
-  iconSize: [32, 45], // Size of the icon
+  iconSize: [22, 33], // Size of the icon
   iconAnchor: [16, 32], // Point of the icon which corresponds to marker's location
   popupAnchor: [0, -32] // Point from which the popup should open relative to the iconAnchor
 });

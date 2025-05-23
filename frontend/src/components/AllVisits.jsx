@@ -59,7 +59,7 @@ export const AllVisits = () => {
                                     </a>
                                 </div>
                                 <div className="shopaction">
-                                    <a href="tel:9091467852">Text</a>
+                                    <a href={`https://wa.me/${element.RepresentativePhone}?text=Hi`}>Text</a>
                                     <a href={`tel:${element.RepresentativePhone}`}>Call</a>
                                 </div>
                             </div>

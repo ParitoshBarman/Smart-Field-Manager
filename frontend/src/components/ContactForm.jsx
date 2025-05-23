@@ -9,19 +9,19 @@ let cameraStyle = {
     mandatory: {
         width: { min: 640 },
         height: { min: 480 }
-      },
-        optional: [
-      { width: 650 },
-      { width: { min: 650 }},
-      { frameRate: 60 },
-      { width: { max: 800 }},
-      { facingMode: "user" }
-        ]
-      }    
+    },
+    optional: [
+        { width: 650 },
+        { width: { min: 650 } },
+        { frameRate: 60 },
+        { width: { max: 800 } },
+        { facingMode: "user" }
+    ]
+}
 
 
 const ContactForm = () => {
-    const {uploadFormData} = useAuth()
+    const { uploadFormData } = useAuth()
     const [formData, setFormData] = useState({
         // Assume logged-in username
         BusinessName: "",
@@ -65,9 +65,9 @@ const ContactForm = () => {
         setFormData((prev) => ({ ...prev, [name]: files[0] }));
     };
 
-    function handelchange(e){
+    function handelchange(e) {
         let inputName = e.target.name
-        setFormData({...formData, [inputName]:e.target.value})
+        setFormData({ ...formData, [inputName]: e.target.value })
     }
 
     // Handle form submission
@@ -83,7 +83,7 @@ const ContactForm = () => {
         formDataObj.append("BusinessRepresentative", formData.BusinessRepresentative);
         formDataObj.append("RepresentativePhone", formData.RepresentativePhone);
         formDataObj.append("BusinessPhone", formData.BusinessPhone);
-        
+
         uploadFormData(formDataObj)
 
         // try {
@@ -96,7 +96,7 @@ const ContactForm = () => {
         // }
     };
 
-    if (message){
+    if (message) {
         return (
             <div>
                 <h1>Successfully Submited</h1>
@@ -106,8 +106,15 @@ const ContactForm = () => {
 
     return (
         <div className="businesscontactForm">
+            <style>
+                {`
+          input {
+            background-color: lightyellow;
+          }
+        `}
+            </style>
             <h2>Contact Form</h2>
-            <form onSubmit={handleSubmit} style={{backgroundColor:'#fffcf6'}}>
+            <form onSubmit={handleSubmit} style={{ backgroundColor: '#fffcf6' }}>
 
                 <div>
                     <label>Business Name:</label>
@@ -115,34 +122,34 @@ const ContactForm = () => {
                 </div>
                 <div>
                     <label>Business Representative Name:</label>
-                    <input type="text" name="BusinessRepresentative" value={formData.BusinessRepresentative} onChange={handelchange}/>
+                    <input type="text" name="BusinessRepresentative" value={formData.BusinessRepresentative} onChange={handelchange} />
                 </div>
                 <div>
                     <label>Representative Phone:</label>
-                    <input type="text" name="RepresentativePhone" value={formData.RepresentativePhone} onChange={handelchange}/>
+                    <input type="text" name="RepresentativePhone" value={formData.RepresentativePhone} onChange={handelchange} />
                 </div>
                 <div>
                     <label>Business Phone:</label>
-                    <input type="text" name="BusinessPhone" value={formData.BusinessPhone} onChange={handelchange}/>
+                    <input type="text" name="BusinessPhone" value={formData.BusinessPhone} onChange={handelchange} />
                 </div>
                 <div>
                     <label>Location:</label>
-                    <input type="text" readOnly name="location" value={formData.location} onChange={handelchange}/>
+                    <input type="text" readOnly name="location" value={formData.location} onChange={handelchange} />
                 </div>
                 <div>
                     <label>Business Image:</label>
                     {/* <input type="file" name="businessImage" onChange={handleFileChange} accept="image/*" /> */}
-                    <input type="file" id="imageFile" name="businessImage" capture="user" accept="image/*" onChange={handleFileChange}/>
+                    <input type="file" id="imageFile" name="businessImage" capture="user" accept="image/*" onChange={handleFileChange} />
                 </div>
                 <div>
                     <label>Representative Photo:</label>
                     {/* <input type="file" name="representativePhoto" onChange={handleFileChange} accept="image/*" /> */}
-                    <input type="file" id="imageFile" name="representativePhoto" capture="user" accept="image/*" onChange={handleFileChange}/>
+                    <input type="file" id="imageFile" name="representativePhoto" capture="user" accept="image/*" onChange={handleFileChange} />
                 </div>
                 <div>
                     <label>Selfie Photo:</label>
                     {/* <input type="file" name="selfiePhoto" onChange={handleFileChange} accept="image/*" /> */}
-                    <input type="file" id="selfiePhoto" name="selfiePhoto" capture="user" accept="image/*" onChange={handleFileChange}/>
+                    <input type="file" id="selfiePhoto" name="selfiePhoto" capture="user" accept="image/*" onChange={handleFileChange} />
                 </div>
                 <button type="submit">Submit</button>
             </form>

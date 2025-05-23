@@ -9,7 +9,7 @@ export const TodaysVisit = ({title}) => {
 
   return (
     <div className='todaysvisitsec'>
-        <h3>{title}</h3>
+        <h3 style={{color:'black'}}>{title}</h3>
         <TodaysVisitList listItm={BusinessList}/>
     </div>
   )

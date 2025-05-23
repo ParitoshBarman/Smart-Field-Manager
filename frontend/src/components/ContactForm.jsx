@@ -107,7 +107,7 @@ const ContactForm = () => {
     return (
         <div className="businesscontactForm">
             <h2>Contact Form</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} style={{backgroundColor:'#fffcf6'}}>
 
                 <div>
                     <label>Business Name:</label>

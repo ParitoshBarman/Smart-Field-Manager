@@ -13,9 +13,18 @@ import {
   Marker,
   Popup
 } from "react-leaflet";
+import customeIcon from '../assets/marker-icon2.png'
+
 const API_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const BusinessViewPage = () => {
+  const customIcon = new L.Icon({
+    iconUrl: customeIcon,
+    iconSize: [32, 45],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -32] 
+  });
+
   const { token } = useAuth();
   const { business_id } = useParams();
   const [businessDetails, setbusinessDetails] = useState(null);
@@ -75,7 +84,7 @@ export const BusinessViewPage = () => {
           />
 
 
-          <Marker position={[businessDetails.location.split(",")[0].trim(), businessDetails.location.split(",")[1].trim()]}>
+          <Marker position={[businessDetails.location.split(",")[0].trim(), businessDetails.location.split(",")[1].trim()]} icon={customIcon}>
             <Popup>
               {businessDetails.BusinessName} <br /> {businessDetails.BusinessRepresentative}
             </Popup>

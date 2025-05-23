@@ -1,0 +1,8 @@
+BusinessName	ABC Enterprises	text
+BusinessRepresentative	John Doe	text
+RepresentativePhone	+911234567890	text
+BusinessPhone	+919876543210	text
+location	Delhi, India	text
+businessImage	(Choose a file)	file
+representativePhoto	(Choose a file)	file
+selfiePhoto	(Choose a file)	file

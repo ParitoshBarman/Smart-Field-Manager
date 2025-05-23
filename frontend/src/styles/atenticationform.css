@@ -1,0 +1,102 @@
+/* General Styles */
+.loginpage {
+    /* width: 100vw; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginpage h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loginpage form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.loginpage label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.loginpage input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.loginpage button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.loginpage button:hover {
+    background-color: #45a049;
+}
+
+/* Centering form */
+.loginpage div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Link Styles */
+.loginpage a {
+    text-decoration: none;
+    color: #4caf50;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.loginpage a:hover {
+    text-decoration: underline;
+}
+
+/* Error and Success Messages */
+.loginpage .error {
+    color: #d9534f;
+    background-color: #f2dede;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loginpage .success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .loginpage form {
+        padding: 20px;
+    }
+}

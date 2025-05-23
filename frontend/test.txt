@@ -1,0 +1,4 @@
+User Registration: POST /api/users/register
+User Login: POST /api/users/login
+Submit Contact: POST /api/contact/submit (Requires Authorization token)
+Get Contacts: GET /api/contact/all (Requires Authorization token)

@@ -1,0 +1,67 @@
+.todaysvisitsec{
+    padding: 24px 12px;
+}
+.todaysvisitsec>h3{
+    font-size: 28px;
+}
+
+.todaysvisitsec>ul{
+    margin-top: 14px;
+    border: 1px solid color(srgb 0.867028 0.88 0.892972);
+    border-radius: 8px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todaysvisitsec>ul>li{
+    border-bottom: 1px solid color(srgb 0.867028 0.88 0.892972);
+}
+.todaysvisitsec>ul>li:last-child{
+    border-bottom: none;
+
+}
+
+
+.todaysvisitsec>ul>li>div{
+    text-decoration: none;
+    color: #1e2125;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.todaysvisitsec>ul>li>div>div>a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.todaysvisitsec>ul>li>div>div>a>.shopactiondata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.todaysvisitsec>ul>li>div>div>a:first-child{
+    gap: 15px;
+}
+.todaysvisitsec>ul>li>div>div>a>div>img{
+    width: 40px;
+    border-radius: 50%;
+}
+.todaysvisitsec>ul>li>div>.shopaction{
+    display: flex;
+    gap: 12px;
+}
+.todaysvisitsec>ul>li>div>.shopaction>a{
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+}

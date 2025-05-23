@@ -7,6 +7,13 @@
 
 ---
 
+**Credentials for Testing:**
+  - ✉️ **Email**: `pari@gmail.com`
+  - 🔑 **Password**: `123`
+
+
+---
+
 ## 📌 Project Overview
 
 **Smart Field Manager** is a B2B-focused web application that helps track and manage field sales executives and their daily visits to business clients. Built with cost-efficiency and essential features in mind, this solo project is fully functional, scalable, and ready for real-world deployment.

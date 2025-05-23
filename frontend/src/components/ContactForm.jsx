@@ -109,7 +109,7 @@ const ContactForm = () => {
             <style>
                 {`
           input {
-            background-color: lightyellow;
+            background-color: #e9e9e6;
           }
         `}
             </style>
